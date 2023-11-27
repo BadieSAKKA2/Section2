@@ -1,5 +1,5 @@
 import "./Header.css";
-import cartIcon from "../../assets/cart-shopping-solid.svg";
+import cartIcon from "./../../Assets/cart-shopping-solid.svg";
 //import cartIcon from "../../assets/cart.png";
 
 function Header() {
