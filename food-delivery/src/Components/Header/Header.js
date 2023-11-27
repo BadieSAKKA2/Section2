@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./Header.css";
-import cartIcon from "./../../assets/cart-shopping-solid.svg";
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 //import cartIcon from "../../assets/cart.png";
 import Modal from "../UI/Modal/Modal";
-import { CartProvider, useCart } from "../../Contexts/cart-context";
+import { useCart } from "../../Contexts/cart-context";
 
 function Header() {
 
@@ -25,7 +25,7 @@ function Header() {
         className="cart-button"
         onClick={openCartHandler}
       >
-        <img src={cartIcon} alt="Cart Icon" className="cart-icon" />
+        <ShoppingCartIcon fontSize="medium"/>
         <div className="cart-button-text">Your Cart</div>
         <div className="cart-number-tag">{cartContext.state.cartItems.length}</div>
       </button>
