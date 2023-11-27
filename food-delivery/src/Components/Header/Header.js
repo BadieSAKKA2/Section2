@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import "./Header.css";
-import cartIcon from "./../../Assets/cart-shopping-solid.svg";
+import cartIcon from "./../../assets/cart-shopping-solid.svg";
 //import cartIcon from "../../assets/cart.png";
 import Modal from "../UI/Modal/Modal";
+import { CartProvider, useCart } from "../../Contexts/cart-context";
 
 function Header() {
+
+  const cartContext = useCart();
   const [cartIsOpen, setCartIsOpen] = useState(false);
 
   const openCartHandler = () => {
@@ -24,10 +27,10 @@ function Header() {
       >
         <img src={cartIcon} alt="Cart Icon" className="cart-icon" />
         <div className="cart-button-text">Your Cart</div>
-        <div className="cart-number-tag">2</div>
+        <div className="cart-number-tag">{cartContext.state.cartItems.length}</div>
       </button>
       <Modal isOpen={cartIsOpen} onClose={closeCartHandler}>
-        <div style={{ backgroundColor: "#FFFFFF" }}>cart component here</div>
+        <div style={{ backgroundColor: "#FFFF00" }}>cart component here</div>
       </Modal>
     </div>
   );
