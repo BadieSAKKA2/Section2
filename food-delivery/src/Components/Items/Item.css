@@ -1,0 +1,107 @@
+
+
+h2,p{
+  margin: 0;
+}
+
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 0.75rem;
+    /* margin: 1rem 0; */
+    background-color: #ffffff;
+    border-radius: 1 rem;
+  }
+
+  .item__desc {
+    /* flex-direction:column;
+    justify-content: space-between;
+    align-items: flex-start; */
+    text-align: left;
+    line-height: 1.7rem;
+  }
+
+  .item__amount {
+    display:flex;
+    font-size: bold;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    align-items: end;
+    gap:0.5rem;
+    font-weight: 600;
+  }
+  
+  .item__description {
+    /* display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: cen;
+    justify-content: flex-start;
+    flex: 1; */
+font-style: italic;
+    color: rgb(66, 58, 51);
+  }
+  
+  .item h2 {
+    color: #000000;
+    font-size: 1rem;
+    font-weight: bold;
+    flex: 1;
+    /* margin: 0 1rem; */
+  }
+  
+  .item input {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    padding : 3px;
+    width: 35px;
+    /* height:20px; */
+  }
+  .item__price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(226, 99, 25);
+    /* padding: 0.5rem; */
+    border-radius: 12px;
+  }
+
+  .item button {
+    font: inherit;
+    font-size: bold;
+    cursor: pointer;
+    border: 1px solid #8f2206;
+    background-color: #8f2206;
+    color: white;
+    border-radius: 30px;
+    /* margin-right: 1rem; */
+    /* height:30px; */
+    /* width: 80px; */
+    padding-inline: 2rem;
+    padding-block: 0.2rem;    
+  }
+
+  .item-amount__controls {
+    /* padding:10px; */
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .amount-label {
+    /* margin-left: auto; */
+    font-size: 1rem;
+    /* margin-right: 20%; */
+    margin-right:10px;
+    font-weight:bold;
+  }
+
+  
+  hr{margin:0;
+    /* border:  solid rgb(243, 127, 127); */
+    background-color: #000000;
+  }
+  body{
+    background:rgb(81, 81, 85);
+  }
