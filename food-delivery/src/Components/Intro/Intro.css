@@ -20,6 +20,7 @@
     padding: 150px 0;
     background-color: #3a3a3a;
     background-image: url("../../assets/background-image.png");
+    background-size: 100% 300px ;
     background-repeat: no-repeat;
 }
 p{
