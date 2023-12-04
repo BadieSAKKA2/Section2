@@ -13,6 +13,7 @@ h2,p{
     /* margin: 1rem 0; */
     background-color: #ffffff;
     border-radius: 1 rem;
+    max-width: 95%;
   }
 
   .item__desc {
@@ -28,7 +29,7 @@ h2,p{
     font-size: bold;
     flex-direction: column;
     /* justify-content: flex-end; */
-    align-items: end;
+    align-items: flex-end;
     gap:0.5rem;
     font-weight: 600;
   }

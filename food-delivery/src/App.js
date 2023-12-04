@@ -1,13 +1,16 @@
 import './App.css';
 import Header from './Components/Header/Header';
-import React from "react";
+import ItemsList from "./Components/ItemsList/ItemsList"
+import Intro from "./Components/Intro/Intro"
 
 function App() {
   
 
   return (
-    <div className="App">
+    <div>
         <Header></Header>
+        <Intro />
+        <ItemsList />
     </div>
   );
 }
