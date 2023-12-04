@@ -4,6 +4,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 //import cartIcon from "../../assets/cart.png";
 import Modal from "../UI/Modal/Modal";
 import { useCart } from "../../Contexts/cart-context";
+import CartModal from "../CartModal/CartModal";
 
 function Header() {
 
@@ -30,7 +31,9 @@ function Header() {
         <div className="cart-number-tag">{cartContext.state.cartItems.length}</div>
       </button>
       <Modal isOpen={cartIsOpen} onClose={closeCartHandler}>
-        <div style={{ backgroundColor: "#FFFF00" }}>cart component here</div>
+        <div style={{ backgroundColor: "#FFFF00" }}>
+          <CartModal/>
+        </div>
       </Modal>
     </div>
   );

@@ -1,6 +1,5 @@
 import React from 'react';
-import Item from './Item';
-
+import Item from '../Item/Item';
 import './ItemsList.css';
 
 const ItemsList = () => {
@@ -16,9 +15,7 @@ const ItemsList = () => {
             {Items.map( (item) => (
             <Item 
                 key={item.id}
-                title={item.label}
-                desc={item.desc}
-                price={item.price}
+                item={item}
             />
             ))}
         </div>
