@@ -34,16 +34,16 @@
     margin-bottom: 1rem;
   }
 
-.background-space { /* TODO: relocate background to app component or to a component (or div) that encapsulates both intro and item list*/
+/*.background-space {   NOT USED (BACKROUND HANDLED IN APP COMPONENT)        /* TODO: relocate background to app component or to a component (or div) that encapsulates both intro and item list
   height: 80px;
 
   padding: 150px 0;
   background-color: #3a3a3a;
   background-image: url("../../assets/background-image.png");
 
-  background-size: 100% 150px; /* MTBH: changed 300px to 150px*/
+  background-size: 100% 150px; /* MTBH: changed 300px to 150px
   background-repeat: no-repeat;
-}
+}*/
 p {
   padding: 0px 15px;
   font-size: 13px;

@@ -9,9 +9,11 @@ const Item = ({item}) => {
 
   const addToCart = () => {
     if(cartItem){
+      //console.log("added amout:", enteredAmount);
       dispatch({ type: 'ADD_AMOUNT', payload: { item, quantity: parseInt(enteredAmount) } });
       setEnteredAmount(1);
     }else{
+      //console.log("new amount amout:", enteredAmount);
       dispatch({ type: 'ADD_TO_CART', payload: { item, quantity: parseInt(enteredAmount) } });
       setEnteredAmount(1);
     }
@@ -40,8 +42,8 @@ const Item = ({item}) => {
     <div>
       <div className="item">
         <div className="item__desc">
-          <h2>{item.title}</h2>
-          <p className="item__description">{item.desc}</p>
+          <h2>{item.label/* MTBH: the error was that item.title was called instead (undefined) */ }</h2> 
+          <div className="item__description">{item.desc}</div>
           <div className="item__price">${item.price}</div>
         </div>
         <div className="item__amount">

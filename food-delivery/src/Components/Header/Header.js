@@ -15,7 +15,6 @@ function Header() {
     setCartIsOpen(true);
   };
   const closeCartHandler = () => {
-    console.log("jkbjknj");
     setCartIsOpen(false);
   };
 

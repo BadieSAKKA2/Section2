@@ -21,12 +21,14 @@ const cartReducer = (state, action) => {
         ),
       };
     case 'ADD_AMOUNT':
+      //console.log("add amout called:", state,action);
       return { ...state,
               cartItems: state.cartItems.map(item =>
               item.id === action.payload.id ? { ...item, quantity: item.quantity + action.payload.quantity } : item),
             }
 
     case 'ADD_TO_CART':
+      //console.log("add to cart called:", state,action);
       return { ...state, cartItems: [...state.cartItems, { ...action.payload.item, quantity: action.payload.quantity }] };
     
       case 'REMOVE_FROM_CART':
