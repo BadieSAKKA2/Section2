@@ -31,9 +31,7 @@ function Header() {
         <div className="cart-number-tag">{cartContext.state.cartItems.length}</div>
       </button>
       <Modal isOpen={cartIsOpen} onClose={closeCartHandler}>
-        <div style={{ backgroundColor: "#FFFF00" }}>
-          <CartModal/>
-        </div>
+          <CartModal onCLose={closeCartHandler}/>
       </Modal>
     </div>
   );

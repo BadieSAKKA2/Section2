@@ -22,6 +22,7 @@ h2,p{
     align-items: flex-start; */
     text-align: left;
     line-height: 1.7rem;
+    font-style: italic;
   }
 
   .item__amount {
@@ -62,7 +63,7 @@ font-style: italic;
     /* height:20px; */
   }
   .item__price {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: bold;
     color: rgb(226, 99, 25);
     /* padding: 0.5rem; */
@@ -106,3 +107,4 @@ font-style: italic;
   body{
     background:rgb(81, 81, 85);
   }
+
